@@ -1,0 +1,16 @@
+-------site
+https://dribbble.com/shots/24287189-Defi-Landing-Page
+
+-------logo
+https://www.svgshapes.in/
+
+------font
+montserrat
+
+
+
+-------dark
+https://colorhunt.co/palette/3630624d4c7d827397d8b9c3
+
+-------light
+https://colorhunt.co/palette/f5efffe5d9f2cdc1ffa294f9
