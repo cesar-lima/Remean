@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import '../styles/navbar.scss'
+import { ArrowCircleUpRight } from '@phosphor-icons/react'
 
 export default function Navbar() {
     return (
@@ -21,22 +22,28 @@ export default function Navbar() {
                         </g>
                     </g>
                 </svg>
-
-                <div>
-                    Remean
-                </div>
             </div>
 
             <div className="nav-items">
-                <Link to="/">HOME</Link>
-                <Link to="/about">ABOUT</Link>
-                <Link to="/how-it-works">HOW IT WORKS?</Link>
+                <div>
+                    <Link to="/">HOME</Link>
+                    <Link to="/about">ABOUT</Link>
+                    <Link to="/how-it-works">HOW IT WORKS?</Link>
+                </div>
+
+                <a className='source-code' href="https://www.github.com/cesar-lima/Remean" target="_blank">
+                    <span>Source code</span>
+                    <ArrowCircleUpRight size={28} color="#ffffff" weight="thin" />
+                </a>
             </div>
 
             <div className="nav-getstarted-container">
-                <div className="getstarted-button">
-                    <Link to="/convert">Get Started</Link>
-                </div>
+                <Link className="getstarted-button" to="/convert">
+                    <span className="top-key"></span>
+                    <span className="text">Get started</span>
+                    <span className="bottom-key-1"></span>
+                    <span className="bottom-key-2"></span>
+                </Link>
             </div>
         </nav>
     )
