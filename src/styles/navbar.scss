@@ -32,6 +32,13 @@ nav {
 
         div:nth-child(1) {
             gap: 24px;
+            font-weight: 500;
+            transition: 0.4s;
+        }
+
+        div:nth-child(1) :hover {
+            transition: 0.4s;
+            color: #ffffffd8;
         }
 
         .source-code {
@@ -145,7 +152,7 @@ nav {
     .getstarted-button:hover {
         color: white;
         background: white;
-        border: 2px solid #000000;
+        border: 1px solid #000000;
     }
 
     .getstarted-button:hover::before {
