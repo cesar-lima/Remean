@@ -1,0 +1,83 @@
+#hero {
+    width: 100%;
+    background: #ffffff03;
+    margin-top: 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(9.2px);
+    padding: 24px;
+    -webkit-backdrop-filter: blur(9.2px);
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .hero-title {
+        text-align: center;
+        font-weight: 400;
+        margin-top: -50px;
+
+        div:nth-child(1) {
+            font-size: 50pt;
+            font-weight: 700;
+
+            span {
+                background: linear-gradient(-45deg, #FFF2AF, #A294F9, #f75487, #A294F9);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 400% 400%;
+                animation: gradient 3s ease infinite;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0 50%;
+                }
+            }
+        }
+
+        div:nth-child(2) {
+            font-size: 14pt;
+        }
+    }
+
+    .currency-dots {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 50px;
+    }
+}
+
+#hero::before,
+#hero::after {
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    background: radial-gradient(rgb(255, 255, 255), transparent);
+    opacity: 0.6;
+    filter: blur(50px);
+    border-radius: 50%;
+}
+
+#hero::before {
+    bottom: -20px;
+    left: -20px;
+}
+
+#hero::after {
+    top: -20px;
+    right: -20px;
+}
