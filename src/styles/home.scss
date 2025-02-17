@@ -12,21 +12,22 @@
     min-height: 600px;
 
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
 
 
     .hero-title {
         text-align: center;
         font-weight: 400;
-        margin-top: -50px;
+        margin-top: -60px;
+        
 
         div:nth-child(1) {
             font-size: 50pt;
             font-weight: 700;
 
             span {
-                background: linear-gradient(-45deg, #FFF2AF, #A294F9, #f75487, #A294F9);
+                background: linear-gradient(-45deg, #69d7db, #A294F9, #f75487, #A294F9);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -49,14 +50,13 @@
 
         div:nth-child(2) {
             font-size: 14pt;
-        }
-    }
 
-    .currency-dots {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            // margin-top: 15px;
+        }
     }
 }
 
@@ -70,6 +70,7 @@
     opacity: 0.6;
     filter: blur(50px);
     border-radius: 50%;
+    animation: gradient 3s ease infinite;
 }
 
 #hero::before {
