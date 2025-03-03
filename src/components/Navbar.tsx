@@ -28,7 +28,7 @@ export default function Navbar() {
                 <div>
                     <Link to="/">HOME</Link>
                     <Link to="/about">ABOUT</Link>
-                    <Link to="/how-it-works">HOW IT WORKS?</Link>
+                    <Link to="/how-it-works">CURRENCIES</Link>
                 </div>
 
                 <a className='source-code' href="https://www.github.com/cesar-lima/Remean" target="_blank">
