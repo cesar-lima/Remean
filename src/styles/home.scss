@@ -116,7 +116,7 @@
         overflow-x: hidden;
         // flex-wrap: wrap;
 
-        &:after{
+        &:after {
             content: "";
             position: absolute;
             width: 100%;
@@ -131,7 +131,7 @@
 
         .card {
             width: 200px;
-            
+
             .card-title {
                 padding-left: 8px;
                 margin-bottom: 48px;
@@ -141,7 +141,7 @@
                 border-left: 2px solid #A294F9;
                 height: 24px;
             }
-    
+
             .card-content {
                 padding-left: 10px;
                 font-size: 10pt;
@@ -157,7 +157,6 @@
     margin-top: 460px;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
 
     .currencies-subtitle {
         font-weight: 700;
@@ -182,9 +181,9 @@
         width: 400px;
         display: flex;
         justify-content: flex-end;
-        
 
-        div{
+
+        div {
             position: absolute;
             transition: 0.3s ease-in-out;
 
@@ -198,19 +197,15 @@
             &:nth-child(1) {
                 z-index: 1;
             }
-            
+
             &:nth-child(2) {
                 z-index: 2;
                 top: 80px;
             }
-            
+
             &:nth-child(3) {
                 z-index: 3;
                 top: 170px;
-            }
-
-            &:nth-child(1):hover {
-                top: -20px;
             }
 
             &:nth-child(2):hover {
@@ -222,4 +217,70 @@
             }
         }
     }
+}
+
+footer {
+    margin-top: 400px;
+    padding-inline: 100px;
+    
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-logo {
+            display: flex;
+            align-items: flex-start;
+            
+            gap: 20px;
+
+            .footer-logo-image {
+                svg {
+                    width: 40px;
+                }
+            }
+
+            .footer-logo-name {
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+
+        .utils {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .utils-title {
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+
+            .utils-link{
+                color: #ffffff8c;
+                font-size: 13px;
+                margin-bottom: 8px;
+                transition: 0.3s;
+                text-decoration: none;
+            }
+
+            .utils-link:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .footer-info {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.7;
+        
+        a{
+            color: #A294F9;
+            font-size: 13px;
+        }
+    }
+
 }
